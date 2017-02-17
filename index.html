@@ -26,6 +26,7 @@
             img.main-logo {
               height: 20px;
               margin-top: 30px;
+              width: 320px;
             }
             .search-container {
               width: 495px;
@@ -39,13 +40,13 @@
             .search {
               background-color: #AAA;
               float: right;
-              width: 350px;
+              width: 300px;
               margin-top: 5.5px;
               height: 30px;
             }
             div.search-container img {
               width: 120px;
-              margin-left: 15px;
+              margin-left: 70px;
               margin-top: 5px;
             }
 
@@ -57,11 +58,12 @@
             }
             nav.main-navigation a {
               text-decoration: none;
-              padding: 10px 15px;
+              padding: 5px 21.2px;
               display: block;
               border: thin solid;
-              margin-top: 10px;
-            }
+              margin-top: 11px;
+              margin-right: 5px;
+              }
             .slider img {
               width: 75%;
               height: 300px;
@@ -81,33 +83,143 @@
             }
             .middle-content {
               height: 300px;
-              background-color: red;
               position: relative;
-
             }
             aside.sidebar-left {
               width: 20%;
               height: 100%;
               float: left;
+              background-color: #CCC;
             }
             div.latest-news {
               height: 100%;
               background-color: yellow;
               position: absolute;
-              left: 30%;
-              width: 70%;
+              left: 20%;
+              width: 50%;
+            }
+            div.latest-news h1 {
+              font-size: 15px;
+              margin: 10px 15px;
+            }
+            div.latest-news h2 {
+              font-size: 15px;
+              float: right;
+              margin-right: 15px;
+              margin-bottom: 30px;
 
             }
             aside.sidebar-right {
-              width:
+              width:30%;
+              height: 100%;
+              background: green;
+              float: right;
+            }
+            aside.sidebar-right h1 {
+              font-size: 15px;
+              margin: 10px 15px;
+            }
+            .sidebar-nav a {
+              display: block;
+              padding: 15px;
+              border: solid thin;
+              text-align: center;
+              text-decoration: none;
             }
             .sidebar-nav ul {
-              display: block;
+
             }
             .sidebar-nav li {
               list-style-type: none;
               width: 100%;
-              border-bottom: solid;
+            }
+            .bottom-content {
+              height: 250px;
+              position: relative;
+              background-color: #CCC;
+            }
+            aside.bottom-left {
+              width: 29%;
+              height: 95%;
+              background-color: rgba(12, 56, 124, 1);
+              float: left;
+              margin: 5px;
+            }
+            div.bottom-middle {
+              width: 39%;
+              height: 95%;
+              position: absolute;
+              left: 30%;
+              background-color: rgba(12, 56, 124, 1);
+              margin: 5px;
+            }
+            aside.bottom-right {
+              width: 29%;
+              height: 95%;
+              float: right;
+              background-color: rgba(12, 56, 124, 1);
+              margin: 5px;
+            }
+            aside.bottom-left h1 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align:left;
+              color: white;
+              margin-left: 10px;
+              padding: 5px;
+            }
+            aside.bottom-left img {
+              width: 100%;
+              height: 70%;
+            }
+
+            div.bottom-middle h1 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align: left;
+              margin-left: 10px;
+              color: white;
+              padding: 5px;
+            }
+            div.bottom-middle img {
+              width: 100%;
+              height: 70%;
+            }
+            aside.bottom-right h1 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align: left;
+              margin-left: 10px;
+              color: white;
+              padding: 5px;
+            }
+            aside.bottom-right img {
+              width: 100%;
+              height: 70%;
+            }
+            aside.bottom-left h2 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align:left;
+              color: #CCC;
+              margin-left: 10px;
+              padding: 5px;
+            }
+            div.bottom-middle h2 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align: left;
+              margin-left: 10px;
+              color: #CCC;
+              padding: 5px;
+            }
+            aside.bottom-right h2 {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align: left;
+              margin-left: 10px;
+              color: #CCC;
+              padding: 5px;
             }
 
 
@@ -129,12 +241,12 @@
         </header>
         <nav class="main-navigation">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Admission</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Student Life</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Athletics</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADMISSION</a></li>
+            <li><a href="#">ACADEMICS</a></li>
+            <li><a href="#">STUDENT LIFE</a></li>
+            <li><a href="#">RESEARCH</a></li>
+            <li><a href="#">ATHLETICS</a></li>
           </ul>
 
         </nav>
@@ -156,23 +268,44 @@
               <aside class="sidebar-left">
                 <ul class="sidebar-nav">
                   <li><a href="#">News & Events</a></li>
-                  <li><a href="#">Future Student</a></li>
-                  <li><a href="#">Current Student</a></li>
+                  <li><a href="#">Future Students</a></li>
+                  <li><a href="#">Current Students</a></li>
                   <li><a href="#">Faculty & Staff</a></li>
                   <li><a href="#">Parents & Vistors</a></li>
                   <li><a href="#">Alumni</a></li>
                 </ul>
-
               </aside>
               <div class="latest-news">
+                <h1>LATEST NEWS</h1>
+                <h2>NEWS SOURCES</h2>
 
               </div>
               <aside class="sidebar-right">
+                <h1>WHAT'S COMING UP</h1>
 
               </aside>
+            </div>
+            <div class="bottom-content">
+                <aside class="bottom-left">
+                  <h1>ACADEMICS</h1>
+                  <img src="./img/box-4-year-scholars.jpg" alt="scholars">
+                  <h2>Four-Year Scholar</h2>
+                  
+                </aside>
+              <div class="bottom-middle">
+                  <h1>STUDENT LIFE</h1>
+                  <img src="./img/box-healing-garden.jpg" alt="garden">
+                  <h2>Healing Garden</h2>
+
+              </div>
+                <aside class="bottom-right">
+                  <h1>ALUMNI</h1>
+                  <img src="./img/box-making-difference.jpg" alt="difference">
+                  <h2>Making a Difference</h2>
+
+                </aside>
 
             </div>
-
           </div>
       </div>
 
