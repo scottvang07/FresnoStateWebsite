@@ -9,7 +9,6 @@
               margin: 0;
               padding: 0;
             }
-
             .container {
               height: 100%;
               display: flex;
@@ -49,16 +48,17 @@
               margin-left: 70px;
               margin-top: 5px;
             }
-
             nav.main-navigation ul {
               list-style-type: none;
             }
             nav.main-navigation li {
-              display: inline-block;
+              display: table-cell;
+              width: 200px;
             }
             nav.main-navigation a {
               text-decoration: none;
-              padding: 5px 21.2px;
+              padding: 5px;
+              text-align: center;
               display: block;
               border: thin solid;
               margin-top: 11px;
@@ -69,14 +69,16 @@
               height: 300px;
             }
             .slider-small {
-              background-color: yellow;
               width: 25%;
               height: 300px;
               float: right;
             }
             .slider-sm img {
               width: 100%;
-              height: 97px;
+              height: 97.49px;
+            }
+            .slider-sm ul {
+              padding: none;
             }
             .slider-sm li {
               list-style-type: none;
@@ -88,46 +90,95 @@
             aside.sidebar-left {
               width: 20%;
               height: 100%;
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 12.5px;
               float: left;
-              background-color: #CCC;
+              background-color: white;
+              text-transform: uppercase;
             }
             div.latest-news {
               height: 100%;
-              background-color: yellow;
+
               position: absolute;
               left: 20%;
-              width: 50%;
+              width: 35%;
+            }
+            div.latest-news ul {
+              margin-left: 15px;
+              margin-right: 5px;
+            }
+            div.latest-news li {
+              list-style: none;
+            }
+            div.latest-news a {
+              font-size: 14px;
+              text-decoration: none;
+              color: blue;
             }
             div.latest-news h1 {
-              font-size: 15px;
+              font-size: 20px;
               margin: 10px 15px;
             }
-            div.latest-news h2 {
-              font-size: 15px;
-              float: right;
-              margin-right: 15px;
-              margin-bottom: 30px;
+            div.latest-news p {
+              font-size: 14px;
+              margin-bottom: 5px;
+            }
+            aside.news-source-content {
+              height: 100%;
+              width: 50%;
+              position: absolute;
+              left: 93%;
+              bottom: .4%;
+              border-right: solid thin;
+            }
+            aside.news-source-content li {
+              list-style: none;
+              margin-left: 5px;
+              padding: .5px;
+            }
+            aside.news-source-content a {
+              text-decoration: none;
+              font-size: 14px;
+            }
+            aside.news-source-content tr {
 
+            }
+            aside.news-source-content table {
+              margin-left: 15px;
+              margin-top: 15px;
             }
             aside.sidebar-right {
               width:30%;
               height: 100%;
-              background: green;
               float: right;
             }
+            aside.sidebar-right ul {
+              margin-left: 15px;
+              margin-top: 5px;
+              margin-right: 5px;
+            }
+            aside.sidebar-right li {
+              list-style: none;
+              padding: 3px;
+            }
+            aside.sidebar-right a {
+              text-decoration: none;
+              font-size: 14px;
+              color: blue;
+            }
             aside.sidebar-right h1 {
-              font-size: 15px;
-              margin: 10px 15px;
+              font-size: 20px;
+              margin: 10px 10px;
             }
             .sidebar-nav a {
               display: block;
-              padding: 15px;
+              padding: 16.5px;
               border: solid thin;
               text-align: center;
               text-decoration: none;
+              margin-bottom: 1px;
             }
             .sidebar-nav ul {
-
             }
             .sidebar-nav li {
               list-style-type: none;
@@ -168,11 +219,18 @@
               margin-left: 10px;
               padding: 5px;
             }
+            aside.bottom-left p {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align:left;
+              color: white;
+              margin-left: 10px;
+              padding: 5px;
+            }
             aside.bottom-left img {
               width: 100%;
-              height: 70%;
+              height: 60%;
             }
-
             div.bottom-middle h1 {
               font-family: 'vegurregular', Arial, Helvetica, sans-serif;
               font-size: 13px;
@@ -181,9 +239,17 @@
               color: white;
               padding: 5px;
             }
+            div.bottom-middle p {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align:left;
+              color: white;
+              margin-left: 10px;
+              padding: 5px;
+            }
             div.bottom-middle img {
               width: 100%;
-              height: 70%;
+              height: 60%;
             }
             aside.bottom-right h1 {
               font-family: 'vegurregular', Arial, Helvetica, sans-serif;
@@ -193,9 +259,17 @@
               color: white;
               padding: 5px;
             }
+            aside.bottom-right p {
+              font-family: 'vegurregular', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              text-align:left;
+              color: white;
+              margin-left: 10px;
+              padding: 5px;
+            }
             aside.bottom-right img {
               width: 100%;
-              height: 70%;
+              height: 60%;
             }
             aside.bottom-left h2 {
               font-family: 'vegurregular', Arial, Helvetica, sans-serif;
@@ -221,6 +295,69 @@
               color: #CCC;
               padding: 5px;
             }
+            footer.footer-container {
+              height: 150px;
+              width: 100%;
+              margin-top: 5px;
+              position: relative;
+            }
+            aside.footer-content-left {
+              height: 130px;
+              width: 60%;
+              float: left;
+            }
+            img.fs-name-img {
+              position: absolute;
+              margin-left: none;
+            }
+            div.footer-details {
+              position: absolute;
+              overflow: auto;
+              top: 30%;
+              left: 15%;
+            }
+            aside.social-links {
+              float: right;
+              width: 100px;
+              height: 100%;
+              border-right: solid thin;
+            }
+            aside.footer-content-right {
+              height: 130px;
+              width: 40%;
+              float: right;
+            }
+            aside.footer-content-right ul {
+              margin-left: 15px;
+              margin-top: 5px;
+            }
+            aside.footer-content-right li {
+              list-style: none;
+              text-decoration: none;
+            }
+            aside.footer-content-right a {
+              text-decoration: none;
+              color: blue;
+              font-size: 11px;
+            }
+            aside.social-links ul {
+              float: right;
+              padding: none;
+              margin: none;
+            }
+            aside.social-links li {
+              list-style: none;
+              padding: none;
+              margin: none;
+            }
+            aside.social-links img {
+              width: 55%;
+            }
+            img.donate-img {
+              float: right;
+              margin-top: 10px;
+            }
+
 
 
     </style>
@@ -260,7 +397,6 @@
                     <li><img src="./img/slider2.jpg" alt="slider2"></li>
                     <li><img src="./img/slider3.jpg" alt="slider3"></li>
                   </ul>
-
                 </div>
 
             </div>
@@ -276,13 +412,53 @@
                 </ul>
               </aside>
               <div class="latest-news">
-                <h1>LATEST NEWS</h1>
-                <h2>NEWS SOURCES</h2>
-
+                <h1 class="latest-news-tag">Latest News</h1>
+                <ul>
+                  <li><a href="#">Ken Fugelsang, renowned enologist:  built a legacy of winemakers</a></li>
+                  <p><em>02/22/2017 04:41:24 PM</em></p>
+                  <li><a href="#">Ken Fugelsang, renowned enologist:  built a legacy of winemakers</a></li>
+                  <p><em>02/22/2017 04:41:24 PM</em></p>
+                  <li><a href="#">Ken Fugelsang, renowned enologist:  built a legacy of winemakers</a></li>
+                  <p><em>02/22/2017 04:41:24 PM</em></p>
+                  <li><a href="#">Ken Fugelsang, renowned enologist:  built a legacy of winemakers</a></li>
+                  <p><em>02/22/2017 04:41:24 PM</em></p>
+                </ul>
+                <aside class="news-source-content">
+                  <h1 class="news-source-tag">News Source</h1>
+                  <ul>
+                    <li><a href="#">Bulldog Blog</a></li>
+                    <li><a href="#">Campus News</a></li>
+                    <li><a href="#">Commencement</a></li>
+                    <li><a href="#">Community News</a></li>
+                    <li><a href="#">Fresno State Magazine</a></li>
+                    <li><a href="#">Go Bulldogs</a></li>
+                    <li><a href="#">The Collegian</a></li>
+                  </ul>
+                  <table>
+                    <tr>
+                      <td><img src="./img/32x32-facebook.png" alt="Facebook-icon"></td>
+                      <td><img src="./img/32x32-instagram.png" alt="Instagram-icon"></td>
+                      <td><img src="./img/32x32-linkedin.png" alt="Linkedin-icon"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./img/32x32-pinterest.png" alt="Pinterest-icon"></td>
+                      <td><img src="./img/32x32-twitter.png" alt="Twitter-icon"></td>
+                      <td><img src="./img/32x32-youtube.png" alt="Youtube-icon"></td>
+                    </tr>
+                  </table>
               </div>
               <aside class="sidebar-right">
-                <h1>WHAT'S COMING UP</h1>
+                <h1>What's Coming Up</h1>
+                <ul>
+                  <li><a href="#">2/23/2017 Japanese American Voices from the Inside</a></li>
+                  <li><a href="#">2/23/2017 Japanese American Voices from the Inside</a></li>
+                  <li><a href="#">2/23/2017 9066: Commemorating Japanese Americans</a></li>
+                  <li><a href="#">2/23/2017 "iOS, iPhone and iPad"</a></li>
+                  <li><a href="#">2/23/2017 Ethics Center Lecture</a></li>
+                  <li><a href="#">2/23/2017 High School Math Circle</a></li>
+                  <li><a href="#">2/23/2017 MAGIC practice sessions</a></li>
 
+                </ul>
               </aside>
             </div>
             <div class="bottom-content">
@@ -290,25 +466,59 @@
                   <h1>ACADEMICS</h1>
                   <img src="./img/box-4-year-scholars.jpg" alt="scholars">
                   <h2>Four-Year Scholar</h2>
-                  
+                  <p>Programs keeps students on fast track to graduatoin. </p>
                 </aside>
               <div class="bottom-middle">
                   <h1>STUDENT LIFE</h1>
                   <img src="./img/box-healing-garden.jpg" alt="garden">
                   <h2>Healing Garden</h2>
+                  <p>Students rejuvenate therapy garden at Valley Children's Hospital.</p>
 
               </div>
                 <aside class="bottom-right">
                   <h1>ALUMNI</h1>
                   <img src="./img/box-making-difference.jpg" alt="difference">
                   <h2>Making a Difference</h2>
-
+                  <p>Work with former foster care students puts alumnus on center stage.</p>
                 </aside>
-
             </div>
+            <footer class = "footer-container">
+              <aside class="footer-content-left">
+                <img src="./img/fs-seal.gif" alt="fs-seal">
+                <img class = "fs-name-img"src="./img/fs-name.gif" alt="fs-name">
+
+                <div class="footer-details">
+                  <p>5241 N. Maple Ave.</p>
+                  <p>Fresno,CA 93740</p>
+                  <p>P 559.278.4240</p>
+                  <p>&copy 2017</p>
+                </div>
+                <aside class="social-links">
+                  <ul>
+                    <li><img src="./img/32x32-facebook.png" alt="Facebook-icon"></li>
+                    <li><img src="./img/32x32-instagram.png" alt="Instgram-icon"></li>
+                    <li><img src="./img/32x32-linkedin.png" alt="Linkined-icon"></li>
+                    <li><img src="./img/32x32-pinterest.png" alt="Pinterest-icon"></li>
+                    <li><img src="./img/32x32-twitter.png" alt="Twitter-icon"></li>
+                    <li><img src="./img/32x32-youtube.png" alt="Youtube-icon"></li>
+                  </ul>
+                </aside>
+              </aside>
+              <aside class="footer-content-right">
+                <img class = "donate-img" src="./img/donate.png" alt="Donate-Now">
+                <ul>
+                  <li><a href="#">Accessibility</a></li>
+                  <li><a href="#">Comment Form</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Diversity and Inclusion</a></li>
+                  <li><a href="#">Emergencies</a></li>
+                  <li><a href="#">Opporunities for All</a></li>
+                  <li><a href="#">WASC Accreditation</a></li>
+                </ul>
+              </aside>
+            </footer>
           </div>
+
       </div>
-
-
   </body>
 </html>
